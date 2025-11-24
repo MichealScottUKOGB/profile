@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ukogb.gov/michealscott</title>
+  
+  <style>
+    :root{
+      --gov-black:#0b0c0c;
+      --gov-grey:#505a5f;
+      --gov-light:#f3f2f1;
+      --gov-blue:#001f3f;
+      --gov-gold:#b89b46;
+      --accent:#4c8bf5;
+      --accent-2:001f3f;
+      --cream:#fffffff;
+      --navy:#001f3f;
+    }
+
+    body{
+      margin:0;
+      font-family:Arial,Helvetica,sans-serif;
+      background:var(--cream);
+      color:var(--gov-black);
+      overflow-x:hidden;
+      animation:fadeBody 1.5s ease forwards;
+    }
+    @keyframes fadeBody{0%{opacity:0;}100%{opacity:1;}}
+
+    .gov-banner{
+      background:var(--navy);
+      color:white;
+      padding:22px 28px;
+      font-size:27px;
+      font-weight:700;
+      border-bottom:4px solid var(--gov-gold);
+      display:flex;
+      align-items:center;
+      gap:10px;
+      animation:slideDown 0.9s ease;
+    }
+
+    .gov-banner img{
+      width:36px;
+      height:36px;
+    }
+
+    .gov-sub{
+      background:var(--gov-light);
+      padding:12px 28px;
+      border-bottom:2px solid #d0d0d0;
+      animation:fadeIn 1s ease;
+      font-size:15px;
+    }
+
+    .container{
+      max-width:1080px;
+      margin:auto;
+      padding:35px 20px;
+    }
+
+    h1{
+      font-size:40px;
+      margin-bottom:6px;
+      animation:fadeIn 1.2s ease;
+    }
+
+    @keyframes slideDown{0%{transform:translateY(-25px);opacity:0;}100%{transform:none;opacity:1;}}
+    @keyframes fadeIn{0%{opacity:0;}100%{opacity:1;}}
+    @keyframes floatUp{0%{opacity:0;transform:translateY(20px);}100%{opacity:1;transform:none;}}
+
+    .card{
+      background:white;
+      border:1px solid #c9c9c9;
+      border-radius:12px;
+      padding:26px;
+      margin-top:24px;
+      box-shadow:0 6px 26px rgba(0,0,0,0.07);
+      animation:floatUp 0.8s ease;
+      transition:0.3s;
+    }
+    .card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 10px 32px rgba(0,0,0,0.12);
+    }
+
+    .section-title{
+      font-size:24px;
+      font-weight:700;
+      margin-bottom:14px;
+      color:var(--gov-blue);
+      border-left:6px solid var(--gov-gold);
+      padding-left:10px;
+    }
+
+    .avatar{
+      width:130px;
+      height:130px;
+      background:linear-gradient(145deg,var(--gov-blue),var(--accent));
+      border-radius:10px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:45px;
+      font-weight:700;
+      color:white;
+      animation:float 4s ease-in-out infinite;
+      box-shadow:0 10px 25px rgba(0,0,0,0.50);
+      background-image: url('https://th.bing.com/th/id/OIP.hSxC3Nank9r58i9k5n8b_wHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3');
+      background-size:cover;
+      background-position:center;
+    }
+
+    .pill{
+      display:inline-block;
+      background:linear-gradient(#fff,#f7f7f7);
+      padding:7px 16px;
+      border-radius:18px;
+      border:1px solid #b1b4b6;
+      font-size:14px;
+      margin-right:6px;
+      margin-bottom:6px;
+      cursor:default;
+      transition:0.25s;
+    }
+    .pill:hover{
+      background:var(--accent);
+      color:white;
+      border-color:var(--accent-2);
+    }
+
+    .timeline-item{
+      margin-bottom:22px;
+      border-left:4px solid var(--accent);
+      padding-left:16px;
+      animation:floatUp 1s ease;
+    }
+    .timeline-item h4{margin:0 0 6px;color:var(--gov-blue);}
+    .meta{color:var(--gov-grey);}
+
+    .divider{
+      width:100%;
+      height:4px;
+      background:linear-gradient(90deg,var(--gov-gold),var(--accent));
+      margin:35px 0;
+      border-radius:4px;
+      animation:fadeIn 2s ease;
+    }
+
+    .button{
+      display:inline-block;
+      background:linear-gradient(135deg,var(--gov-blue),var(--accent));
+      color:white;
+      padding:12px 20px;
+      text-decoration:none;
+      border-radius:6px;
+      font-weight:700;
+      transition:0.3s;
+      box-shadow:0 4px 14px rgba(0,0,0,0.16);
+    }
+    .button:hover{background:var(--accent-2);}
+
+    footer{
+      margin-top:40px;
+      font-size:14px;
+      color:var(--gov-grey);
+      text-align:center;
+      padding-bottom:40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="gov-banner">
+    <img src="https://cdn.discordapp.com/emojis/1439182890322755645.webp?size=44&animated=true" alt="UKOGB Emoji"> | UKOGB
+  </div>
+  <div class="gov-sub">This website is for UKOGB use, this is NOT a OFFICIAL Goverment website,</div>
+
+  <div class="container">
+
+    <div style="display:flex;gap:24px;align-items:center;flex-wrap:wrap;">
+      <div class="avatar"></div>
+      <div>
+        <h1>Micheal Scott</h1>
+        <div class="meta">Office Manager • Department of Education Officer</div>
+        <div style="margin-top:12px">
+          <span class="pill">Roblox: mrtop5u6</span>
+          <span class="pill">Alternate: therealnolanwastaken</span>
+          <span class="pill">Location: United Kingdom (RP)</span>
+          <span class="pill">Active Since: 2025</span>
+          <span class="pill">Twitter: @UKOGBdeptofedu</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <section class="card">
+      <div class="section-title">Overview</div>
+      <p class="meta">Micheal Scott is an established figure within the UKOGB roleplay universe, currently serving as Office Manager for the Harravel Group and Officer within the Department of Education. His involvement in UK-based governance roleplay spans over a decade, beginning in the education sector before transitioning into government operations during his father's fictional term as Prime Minister. His work now focuses on administration, infrastructure planning, and maintaining high-standard RP professionalism across departments.</p>
+      <p class="meta">Beyond his formal roles, Micheal is known for supporting new roleplay members, maintaining procedural accuracy in UKOGB systems, and managing departmental communication pipelines.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-title">Professional Background</div>
+
+      <div class="timeline-item">
+        <h4>Office Manager — Harravel Group</h4>
+        <div class="meta">15/11/2025 — Present</div>
+        <p class="meta">Oversees administrative operations, coordinates inter-department requests, assists with staffing logistics, and contributes to the group's structural development.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h4>Department of Education Officer — UKOGB</h4>
+        <div class="meta">17/11/2025 — Present</div>
+        <p class="meta">Responsible for reviewing educational roleplay standards, implementing procedural updates, maintaining RP compliance, and supporting UKOGB-approved institutions in delivering accurate British-style education roleplay.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h4>Teacher</h4>
+        <div class="meta">2023 — 2025</div>
+        <p class="meta">Served as a lead instructor, focusing on classroom roleplay realism, safeguarding protocols, and early UKOGB policy adoption.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-title">Latest Updates</div>
+      <ul class="meta" style="line-height:1.6">
+        <li>No current public updates available for Education or Harravel Group.</li>
+        <li>Recruitment & information available through official Discord: <strong>discord.gg/FEgHsSwGtw</strong></li>
+        <li>Internal restructuring meetings planned for upcoming UKOGB term.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <div class="section-title">Contact</div>
+      <p class="meta">
+        Primary Roblox Account: <strong>mrtop5u6</strong><br>
+        Alternate Account: <strong>therealnolanwastaken</strong><br>
+        Department Email (RP): <strong>m.scott@ukogb.gov</strong><br>
+        Discord (RP): <strong>discord.gg/FEgHsSwGtw</strong><br>
+        Availability: N/A
+      </p>
+      <a class="button" href="#">Request RP Documentation</a>
+    </section>
+
+    <footer>Website made by Micheal Scott, Not affiliated with UKOGB / GOV.uk</footer>
+  </div>
+</body>
+</html>
